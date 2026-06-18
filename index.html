@@ -111,24 +111,7 @@
             margin: 0 auto;
         }*/
 
-        .card {
-            background-color: var(--earth-white);
-            /*padding: 2.5rem;*/
-            border-radius: 12px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.04);
-            text-align: center;
-            transition: transform 0.3s ease;
-
-			color: var(--earth-white);
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			text-align: center;
-
-			/* ✨ HANGING EFFECT*/
-			transform: translateY(-20px);
-		}
-
+        
         .card:hover {
             transform: translateY(-10px);
         }
@@ -167,15 +150,13 @@
 			backdrop-filter: blur(15px);
 			box-shadow: 0 20px 50px rgba(0,0,0,.35);
 			color: var(--earth-white);
-			gap: 40px;
+			gap: 5px;
 			align-items: center;
-			
-			color: var(--earth-white);
+			align: center;
 			display: flex;
-			flex-direction: column;
-			align-items: center;
 			text-align: center;
-
+			flex-direction: column;
+			
 			/* ✨ HANGING EFFECT
 			transform: translateY(-20px);*/
 		}
@@ -202,9 +183,7 @@
 		@media(max-width:700px){
 
 			.card {
-				flex-direction: column;
 				text-align: center;
-				padding: 30px;
 			}
 
 			.profile {
@@ -220,6 +199,14 @@
 				font-size: 18px;
 			}
 		}
+		
+		.wrapper {
+			flex: 1;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding: 60px 20px;
+		}
     </style>
 </head>
 <body>
@@ -230,20 +217,20 @@
             🌼 fatinnurnabilarebuan
         </div>
         <nav>
-            <a href="#">Home</a> |
-            <a href="#">About</a> |
-            <a href="#">Skills</a> |
-            <a href="#">Projects</a> |
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Skills</a>
+            <a href="#">Projects</a>
             <a href="#">Contact</a>
         </nav>
     </header>
 
     <!-- Card Class-->
     <!--section class="hero"-->
-	
-		<div class="card">
+	<main class="wrapper">
+	<div class="card">
 		<img class="profile" src="my-portfolio/profile.jpeg"	alt="Fatin Nabila Profile Photo">
-        <h1>Fatin Nur Nabila Rebuan 👋</h1>
+        <h1>WHO AM I?</h1>
 
         <!--div class="tagline">
             Tech Mind. Creative Soul. Always Improving.
@@ -267,34 +254,13 @@
             Let's Connect
         </a>
 		
-		</div>
-        <!--h1>WHO AM I?</h1>
-        <p>Graduated with Bachelor of Computer Science (Hons.) Data Communication and Networking</p>
-        <a href="#" class="btn">Join Me</a-->
-    <!--/section-->
-
-    <!-- Features Section>
-    <section class="features">
-        <div class="card">
-            <h3>🏡 Address</h3>
-            <p>No.257, Jalan Anggerik height 5/3, Taman Anggerik Height, 28700, Bentong, Pahang.</p>
-        </div>
-        <div class="card">
-            <h3>📧 Email Address</h3>
-            <p>nabella.fnn@gmail.com</p>
-			<br><br>
-            <a href="https://www.linkedin.com/in/fatinnurnabilarebuan/" style="text-decoration: none;"><h3>🔗 LinkedIn Profile</h3></a>
-        </div>
-        <div class="card">
-            <h3>♻️ Sustainable Living</h3>
-            <p>Actionable steps toward zero-waste lifestyles and harmonious co-existence with our natural environment.</p>
-        </div>
-    </section-->
-</body>
-    <!-- Footer -->
+	</div></main>
+	
+	    <!-- Footer -->
     <footer>
         <p>&copy; 2026 fatinnurnabilarebuan, "Tech Mind. Creative Soul. Always Improving."</p>
     </footer>
-
+	
+</body>
 
 </html>
